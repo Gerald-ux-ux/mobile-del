@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -20,7 +20,11 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView>
-      <Text style={{ color: "red-500" }}> Home Screen</Text>
+      <Text style={{ color: "red" }}>
+        <View className="flex flex-row">
+          <Text className="text-green-500">Hello, World!</Text>
+        </View>
+      </Text>
     </SafeAreaView>
   );
 };
